@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "747252009082",
+    "firebase_url": "https://milat1453-10f91-default-rtdb.firebaseio.com",
+    "project_id": "milat1453-10f91",
+    "storage_bucket": "milat1453-10f91.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747252009082:android:80b6c09b5128ef016813c3",
+        "android_client_info": {
+          "package_name": "com.example.milat1453"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ1xJZUbc6JciCzpg2jCFx3ztK4fDDues"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
