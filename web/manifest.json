@@ -1,6 +1,6 @@
 {
-    "name": "milat_e_v1",
-    "short_name": "milat_e_v1",
+    "name": "milat",
+    "short_name": "milat",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

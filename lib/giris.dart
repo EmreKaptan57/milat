@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:milat1453/araclar.dart';
-import 'package:milat1453/kayitlar.dart';
+import 'package:milat/araclar.dart';
+import 'package:milat/kayitlar.dart';
+import 'package:milat/yki_mic.dart';
 
 class Giris extends StatefulWidget {
   const Giris({super.key});
@@ -51,7 +52,17 @@ class _GirisState extends State<Giris> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         automaticallyImplyLeading: false,
+        foregroundColor: Colors.black,
         backgroundColor: Colors.white,
+        leading: IconButton(
+            icon: const Icon(Icons.mic),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const YkiMicPage()),
+              );
+            },
+          ),
         actions: [
           IconButton(
             icon: const Icon(Icons.library_books_outlined),
@@ -66,11 +77,10 @@ class _GirisState extends State<Giris> {
       ),
       body: SingleChildScrollView(
         child: Center(
-          // İçeriği yatayda ortalamak için Center ekleniyor
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment:
-                CrossAxisAlignment.center, // Yatayda ortalamak için
+                CrossAxisAlignment.center,
             children: <Widget>[
               const CircleAvatar(
                 radius: 150,
