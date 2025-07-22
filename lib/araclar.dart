@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:milat/giris.dart';
 import 'package:milat/kayitlar.dart';
-import 'package:milat/mira_e.dart';
-import 'package:milat/mira_m.dart';
-import 'package:milat/mira_y.dart';
+import 'package:milat/alaz_e.dart';
+import 'package:milat/alaz_m.dart';
+import 'package:milat/alaz_y.dart';
 import 'package:milat/orka_e.dart';
 import 'package:milat/orka_m.dart';
 import 'package:milat/orka_y.dart';
@@ -25,7 +25,7 @@ class Araclar extends StatefulWidget {
 class _AraclarState extends State<Araclar> {
   final Map<String, bool> _imageLoadedStatus = {
     'assets/images/orka.jpg': false,
-    'assets/images/mira.jpg': false,
+    'assets/images/alaz.jpg': false,
     'assets/images/talon.jpg': false,
   };
 
@@ -179,7 +179,7 @@ class _AraclarState extends State<Araclar> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => MiraMekanik(
+                        builder: (context) => AlazMekanik(
                             controllerName: widget.controllerName,
                             selectedOption: widget.selectedOption)),
                   );
@@ -187,7 +187,7 @@ class _AraclarState extends State<Araclar> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => MiraElektronik(
+                        builder: (context) => AlazElektronik(
                             controllerName: widget.controllerName,
                             selectedOption: widget.selectedOption)),
                   );
@@ -195,7 +195,7 @@ class _AraclarState extends State<Araclar> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => MiraYazilim(
+                        builder: (context) => AlazYazilim(
                             controllerName: widget.controllerName,
                             selectedOption: widget.selectedOption)),
                   );
@@ -211,11 +211,11 @@ class _AraclarState extends State<Araclar> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(10.0),
-                    child: _buildImageWithManualLoading('assets/images/mira.jpg'),
+                    child: _buildImageWithManualLoading('assets/images/alaz.jpg'),
                   ),
                   const SizedBox(width: 40),
                   const Text(
-                    "Mira",
+                    "Alaz",
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
